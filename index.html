@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>灵敢足迹地图</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="vendor/maplibre-gl.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="map-panel" aria-label="足迹地图">
+      <div id="map"></div>
+      <div class="map-credit">天地图 · 国家地理信息公共服务平台</div>
+      <div id="loading" class="loading-card">
+        <strong id="loading-title">正在读取足迹数据</strong>
+        <span id="loading-detail">准备解析 CSV…</span>
+        <div class="progress-track"><div id="progress" class="progress-value"></div></div>
+      </div>
+    </section>
+    <aside class="side-panel">
+      <div class="brand-block">
+        <p class="eyebrow">足迹核查</p>
+        <h1>灵敢足迹</h1>
+        <p>先在地图上检查数据是否齐全</p>
+      </div>
+      <p id="map-error" role="alert" hidden>部分天地图图片加载失败，请检查网络及密钥权限后刷新页面</p>
+      <section class="stats-card" aria-label="数据概览">
+        <div class="stat"><span>足迹点</span><strong id="point-count">—</strong></div>
+        <div class="stat"><span>时间范围</span><strong id="time-range">—</strong></div>
+        <div class="stat"><span>坐标范围</span><strong id="coord-range">—</strong></div>
+      </section>
+      <button id="fit-button" class="primary-button" type="button" disabled>定位全部点</button>
+      <section id="detail-card" class="detail-card" aria-live="polite">
+        <p class="detail-placeholder">点击地图上的点查看原始记录</p>
+      </section>
+      <p class="data-note">点位使用 CSV 中的 WGS84 坐标显示，所有记录均保留，包括靠近零经纬度的异常点。</p>
+    </aside>
+  </main>
+  <script src="vendor/maplibre-gl.js"></script>
+  <script src="vendor/deck.gl.js"></script>
+  <script src="config.local.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
