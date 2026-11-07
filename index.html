@@ -27,20 +27,46 @@
       </div>
       <p id="map-error" role="alert" hidden>部分天地图图片加载失败，请检查网络及密钥权限后刷新页面</p>
       <section class="stats-card" aria-label="数据概览">
-        <div class="stat"><span>足迹点</span><strong id="point-count">—</strong></div>
+        <div class="stat"><span>当前显示足迹点</span><strong id="point-count">—</strong></div>
         <div class="stat"><span>时间范围</span><strong id="time-range">—</strong></div>
         <div class="stat"><span>坐标范围</span><strong id="coord-range">—</strong></div>
+      </section>
+      <section class="filter-card" aria-label="足迹显示设置">
+        <div class="filter-actions" role="group" aria-label="批量切换下列隐藏项目">
+          <button id="show-all-filters" class="filter-action" type="button" disabled>全部显示</button>
+          <button id="hide-all-filters" class="filter-action" type="button" disabled>全部隐藏</button>
+        </div>
+        <label class="filter-option"><input id="show-flight" type="checkbox" disabled><span>显示 2025-07-26～27 两段飞行及起飞滑行</span></label>
+        <label class="filter-option"><input id="show-harbin-flight" type="checkbox" disabled><span>显示 2026-08-30 哈尔滨→武汉飞行及起飞滑行</span></label>
+        <label class="filter-option"><input id="show-june-flight" type="checkbox" disabled><span>显示 2026-06-21、28 武汉⇄哈尔滨往返飞行及起飞滑行</span></label>
+        <label class="filter-option"><input id="show-march-flight" type="checkbox" disabled><span>显示 2026-03-16 成都→武汉飞行及起飞滑行</span></label>
+        <label class="filter-option"><input id="show-december-flight" type="checkbox" disabled><span>显示 2025-12-25 武汉→成都飞行及起飞滑行</span></label>
+        <label class="filter-option"><input id="show-december-return" type="checkbox" disabled><span>显示 2025-12-30 成都→武汉飞行及起飞滑行</span></label>
+        <label class="filter-option"><input id="show-isolated" type="checkbox" disabled><span>显示指定的 8 处孤立异常点（14 条记录）</span></label>
+        <p>孤立点仅含青岛 1 处、西安 2 处、邯郸 1 处、泰安 1 处、化州 1 处、南雄 1 处、恩施 1 处</p>
+        <p id="filter-summary" aria-live="polite">正在读取原始记录</p>
+        <p>快捷按钮仅切换上述项目，原始数据完整保留</p>
+      </section>
+      <section class="filter-card" aria-label="GPX 路线">
+        <strong>GPX 路线</strong>
+        <div id="gpx-options"></div>
+        <p id="gpx-status" role="status">正在加载 GPX 路线…</p>
+      </section>
+      <section class="filter-card" aria-label="导出足迹">
+        <button id="export-csv" class="filter-action export-button" type="button" disabled>导出 CSV</button>
+        <p id="export-status" role="status" aria-live="polite">导出勾选的原始足迹及 GPX 路线，另存新文件</p>
       </section>
       <button id="fit-button" class="primary-button" type="button" disabled>定位全部点</button>
       <section id="detail-card" class="detail-card" aria-live="polite">
         <p class="detail-placeholder">点击地图上的点查看原始记录</p>
       </section>
-      <p class="data-note">点位使用 CSV 中的 WGS84 坐标显示，所有记录均保留，包括靠近零经纬度的异常点。</p>
+      <p class="data-note">点位使用 CSV 中的 WGS84 坐标显示，原始记录完整保留；默认隐藏指定飞行段及 8 处孤立异常点。</p>
     </aside>
   </main>
   <script src="vendor/maplibre-gl.js"></script>
   <script src="vendor/deck.gl.js"></script>
   <script src="config.local.js"></script>
+  <script src="gpx-tracks.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

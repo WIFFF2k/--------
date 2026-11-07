@@ -1,0 +1,137 @@
+[
+  {
+    "id": "rail-1",
+    "name": "汉口-南京南",
+    "date": "2026-04-17",
+    "file": "汉口-南京南_2026-04-17.gpx",
+    "points": 1695,
+    "distanceMeters": 503467,
+    "start": [
+      114.249436,
+      30.621592
+    ],
+    "end": [
+      118.793035,
+      31.970821
+    ],
+    "source": "https://brouter.de/brouter?lonlats=114.2494144%2C30.6216514%7C118.7930516%2C31.970797&profile=rail&format=geojson&alternativeidx=0",
+    "sha256": "9604c5e1f2dac76bd12ded235e6119291dbcf7d9d3f1b45d5423790895dcea8a"
+  },
+  {
+    "id": "rail-2",
+    "name": "南京-汉口",
+    "date": "2026-04-20",
+    "file": "南京-汉口_2026-04-20.gpx",
+    "points": 1773,
+    "distanceMeters": 505163,
+    "start": [
+      118.791746,
+      32.088724
+    ],
+    "end": [
+      114.249436,
+      30.621592
+    ],
+    "source": "https://brouter.de/brouter?lonlats=118.7917463%2C32.0887235%7C114.2494144%2C30.6216514&profile=rail&format=geojson&alternativeidx=0",
+    "sha256": "d16da9a774a48d9b9491b7af5f38b95ca9c14c561b5161c3eb3e1075d585ca80"
+  },
+  {
+    "id": "rail-3",
+    "name": "犀浦-离堆公园",
+    "date": "2025-12-28",
+    "file": "犀浦-离堆公园_2025-12-28.gpx",
+    "points": 295,
+    "distanceMeters": 44157,
+    "start": [
+      103.969601,
+      30.760078
+    ],
+    "end": [
+      103.621541,
+      30.996208
+    ],
+    "source": "https://brouter.de/brouter?lonlats=103.9695%2C30.76%7C103.6215556%2C30.9962148&profile=rail&format=geojson&alternativeidx=0",
+    "sha256": "78bfbf58c369dae8b0265c81ceecb5a2abeabe0f661ff3e7ea51b945ce30b1f6"
+  },
+  {
+    "id": "rail-4",
+    "name": "离堆公园-犀浦",
+    "date": "2025-12-28",
+    "file": "离堆公园-犀浦_2025-12-28.gpx",
+    "points": 295,
+    "distanceMeters": 44157,
+    "start": [
+      103.621541,
+      30.996208
+    ],
+    "end": [
+      103.969601,
+      30.760078
+    ],
+    "source": "https://brouter.de/brouter?lonlats=103.6215556%2C30.9962148%7C103.9695%2C30.76&profile=rail&format=geojson&alternativeidx=0",
+    "sha256": "67d40c2b7880ccbee3eafd878cc2e1b8c29eb6db4d6819873a89ae3e55622e0e"
+  },
+  {
+    "id": "rail-5",
+    "name": "成都东-松潘",
+    "date": "2025-12-29",
+    "file": "成都东-松潘_2025-12-29.gpx",
+    "points": 1095,
+    "distanceMeters": 270248,
+    "start": [
+      104.138939,
+      30.63129
+    ],
+    "end": [
+      103.603992,
+      32.598685
+    ],
+    "source": "https://brouter.de/brouter?lonlats=104.1389215%2C30.6312977%7C103.6043783%2C32.598839&profile=rail&format=geojson&alternativeidx=0",
+    "sha256": "025002764afd8cc46a9b7d79a755e5bdb0e2b566f55e38662d7597b19de41306"
+  },
+  {
+    "id": "rail-6",
+    "name": "松潘-成都东",
+    "date": "2025-12-29",
+    "file": "松潘-成都东_2025-12-29.gpx",
+    "points": 1091,
+    "distanceMeters": 270248,
+    "start": [
+      103.603992,
+      32.598685
+    ],
+    "end": [
+      104.138939,
+      30.63129
+    ],
+    "source": "https://brouter.de/brouter?lonlats=103.6043783%2C32.598839%7C104.1389215%2C30.6312977&profile=rail&format=geojson&alternativeidx=0",
+    "sha256": "ec2212b5d1c3f443c8aa71f8ee5585b3ee71b8a2feb5b8d7601883a3d01e27e8"
+  },
+  {
+    "id": "qinggan",
+    "name": "青甘大环线",
+    "date": "2020-07-21",
+    "file": "青甘大环线.gpx",
+    "points": 10971,
+    "source": "用户已有 GPX",
+    "sha256": "6eb816f6ef4df9deae734d5eed74a29e35ce319718b807e3a8032b05484ce08e"
+  },
+  {
+    "id": "rail-xinyang-zhengzhou",
+    "name": "信阳-郑州",
+    "date": "2025-06-07",
+    "file": "信阳-郑州_2025-06-07.gpx",
+    "points": 887,
+    "distanceMeters": 302678,
+    "start": [
+      114.077322,
+      32.130788
+    ],
+    "end": [
+      113.653678,
+      34.747511
+    ],
+    "source": "https://brouter.de/brouter?lonlats=114.0773267%2C32.130793%7C113.6536663%2C34.7475076&profile=rail&format=geojson&alternativeidx=0",
+    "sha256": "c4abb7aee20571345f80e4e34c6df68ee45ffcb84df0b6e723f626244dfcc26e"
+  }
+]
